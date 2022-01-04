@@ -56,60 +56,62 @@
             <i class="fas fa-bars"></i>
         </div>
     </header> <!--FIN HEADER-->
-    <form action="/register" method="post">
-        <div>
-            <input type="text" name="nombre" placeholder="Nombre y apellido">
-            <br>
-            <input type="text" name="usuario" placeholder="Nombre de usuario" minlength="8" maxlength="10">
-            <br>
-            <input type="email" name="email" placeholder="E-mail">
-            <br>
-            <h4>Fecha de nacimiento:</h4>
-            <!--<label for="dia-cumple">Fecha de nacimiento:</label>-->
-            <br>
-            <input type="date" name="dia-cumple">
-            <br>
-            <input type="text" name="direccion" placeholder="Domicilio">
-            <br>
-            <h4>perfil del usuario:</h4>
-            <div class="perfil">
-                <!--<label for="perfil">perfil del usuario</label>-->
-                <!--<h4>perfil del usuario:</h4>-->
+    <main>
+        <form action="/register" method="post">
+            <div>
+                <input type="text" name="nombre" placeholder="Nombre y apellido">
                 <br>
-                <input type="radio" name="perfil" value="comprar">Comprador
-                <input type="radio" name="perfil" value="vender">vendedor
-            </div>
-            <br>
-            <h4>Intereses:</h4>
-            <div class="intereses">
-                <!--<label for="interes">Intereses:</label><br>-->
-                <input type="checkbox" name="interes" value="electro">Electro
+                <input type="text" name="usuario" placeholder="Nombre de usuario" minlength="8" maxlength="10">
                 <br>
-                <input type="checkbox" name="interes" value="moda">Moda
+                <input type="email" name="email" placeholder="E-mail">
                 <br>
-                <input type="checkbox" name="interes" value="jugueteria">Jugueteria
+                <h4>Fecha de nacimiento:</h4>
+                <!--<label for="dia-cumple">Fecha de nacimiento:</label>-->
                 <br>
-                <input type="checkbox" name="interes" value="vida-sana">Vida sana
+                <input type="date" name="dia-cumple">
+                <br>
+                <input type="text" name="direccion" placeholder="Domicilio">
+                <br>
+                <h4>perfil del usuario:</h4>
+                <div class="perfil">
+                    <!--<label for="perfil">perfil del usuario</label>-->
+                    <!--<h4>perfil del usuario:</h4>-->
+                    <br>
+                    <input type="radio" name="perfil" value="comprar">Comprador
+                    <input type="radio" name="perfil" value="vender">vendedor
+                </div>
+                <br>
+                <h4>Intereses:</h4>
+                <div class="intereses">
+                    <!--<label for="interes">Intereses:</label><br>-->
+                    <input type="checkbox" name="interes" value="electro">Electro
+                    <br>
+                    <input type="checkbox" name="interes" value="moda">Moda
+                    <br>
+                    <input type="checkbox" name="interes" value="jugueteria">Jugueteria
+                    <br>
+                    <input type="checkbox" name="interes" value="vida-sana">Vida sana
+                </div>
+                <br>
+                <br>
+                <h4>Foto de usuario</h4>
+                <!--<label for="avatar">Foto de usuario</label>-->
+                <br>
+                <div class="avatar">
+                    <input type="file" name="avatar" accept="" multiple>
+                </div>
+                <br>
+                <input type="password" name="clave" placeholder="Intrese una contraseña" minlength="8" maxlength="10">
+                <br>
+                <input type="password" name="comf-clave" placeholder="Comfirmar contraseña" minlength="8" maxlength="10">
+                <br>
+                <div class="boton">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
             </div>
-            <br>
-            <br>
-            <h4>Foto de usuario</h4>
-            <!--<label for="avatar">Foto de usuario</label>-->
-            <br>
-            <div class="avatar">
-                <input type="file" name="avatar" accept="" multiple>
-            </div>
-            <br>
-            <input type="password" name="clave" placeholder="Intrese una contraseña" minlength="8" maxlength="10">
-            <br>
-            <input type="password" name="comf-clave" placeholder="Comfirmar contraseña" minlength="8" maxlength="10">
-            <br>
-            <div class="boton">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </div>
-        </div>
-    </form>
+        </form>
+    </main>
     <footer>
         <div>
             <section class="cosas-footer"> 

@@ -21,6 +21,7 @@
     --verde: #39b54a;
     --negro: #000000;
     --blanco: #ffffff;
+    --azulclaro: #0022AA;
     /* FUENTES */
     --text-sm: 1.2em;
     --title-md: 2.4em;
@@ -171,6 +172,13 @@ div .boton input {
     display: grid;
     justify-content: center;
    background-color: var(--celeste);
+   transition: background 0.5s ease;
+   cursor: pointer;
+}
+
+div .boton input:hover {
+    background-color: var(--azulclaro);
+    color: var(--blanco);
 }
 
 /* FOOTER */

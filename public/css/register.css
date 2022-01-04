@@ -21,6 +21,7 @@
     --verde: #39b54a;
     --negro: #000000;
     --blanco: #ffffff;
+    --azulclaro: #0022AA;
     /* FUENTES */
     --text-sm: 1.2em;
     --title-md: 2.4em;
@@ -150,60 +151,12 @@ section.banner img {
     width: 100%;
 }
 
-/* FORM */
+/* MAIN */
 
-form div {
-    display: block;
+main form {
     padding: 60px;
     padding-top: 30px;
-    flex-wrap: wrap;
-    display: grid;
 }
-
-form div input {
-    padding: 11px;
-    border-radius: 10px;
-    border: var(--grisclaro);
-}
-
-form div label {
-    display: block;
-}
-
-form div .perfil {
-    display: flex;
-    padding: 1px;
-    flex-wrap: wrap;
-    gap: 5%;
-}
-
-h4 {
-    display: flex;
-    padding: 10px;
-}
-
-.intereses {
-    padding: 10px;
-}
-
- div .avatar {
-    background-color: var(--grisclaro);
-    padding: 1px;
-}
-
-div .boton {
-    display: flex;
-    flex-direction: row;
-    
-  }
-  div .boton input{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: center;
-   background-color: var(--celeste) 
-  }
-
 
 /* FOOTER */
 /*
@@ -429,18 +382,22 @@ p.copy {
         background-color: var(--grisclaro);
         padding: 1px;
     }
-    
-    div .boton {
-        display: flex;
-        flex-direction: row;
-        
-      }
-      div .boton input{
+
+    .boton  {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
-        justify-content: center;
-       background-color: var(--celeste) 
-      }
+        
+    }
 
+
+    .boton input {
+        background-color: var(--celeste);
+        transition: background 0.5s ease;
+        cursor: pointer;
+    }
+
+    .boton input:hover {
+        background-color: var(--azulclaro);
+        color: var(--blanco);
+    }
 }

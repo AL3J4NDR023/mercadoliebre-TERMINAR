@@ -9,8 +9,12 @@ app.get('/', (req,res) =>{
     res.sendFile(path.resolve(__dirname, './views/home.html'))
 })
 
-app.listen(process.env.PORT || 300, () => {
+/*app.listen(process.env.PORT || 300, () => {
     console.log('Servidor corriendo en el puerto 3000');
+});*/
+
+app.listen(3030,()=>{  //correr servidor
+    console.log("Server Run")
 });
 
 app.get('/',(req,res)=>{
